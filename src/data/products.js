@@ -8,7 +8,7 @@ export const helmets = [
     rating: 4.8,
     sizes: ['M', 'L', 'XL'],
     colors: ['Matte Black', 'Gloss Carbon'],
-    image: '/images/full_face_carbon_helmet_1786813061790.jpg',
+    image: `${import.meta.env.BASE_URL}images/full_face_carbon_helmet_1786813061790.jpg`,
     description: 'The Apex R1 Carbon is engineered for track-level performance with daily rideability. Features a 100% carbon fiber shell for extreme lightweight protection.',
     features: [
       'ECE 22.06 & DOT Certified',
@@ -28,7 +28,7 @@ export const helmets = [
     rating: 4.6,
     sizes: ['S', 'M', 'L', 'XL'],
     colors: ['Nardo Grey', 'Matte Black', 'Neon Yellow'],
-    image: '/images/full_face_carbon_helmet_1786813061790.jpg',
+    image: `${import.meta.env.BASE_URL}images/full_face_carbon_helmet_1786813061790.jpg`,
     description: 'Perfect for the urban commuter. The Volt Street X offers superior ventilation and a drop-down internal sun visor for all-day comfort.',
     features: [
       'DOT Approved',
@@ -48,7 +48,7 @@ export const helmets = [
     rating: 4.7,
     sizes: ['M', 'L', 'XL', 'XXL'],
     colors: ['Gloss White', 'Matte Black'],
-    image: '/images/modular_touring_helmet_1786813075868.jpg',
+    image: `${import.meta.env.BASE_URL}images/modular_touring_helmet_1786813075868.jpg`,
     description: 'Touring redefined. The Raven Modular Pro allows you to easily switch between a full-face and open-face configuration with a single hand motion.',
     features: [
       'Dual P/J Homologation',
@@ -68,7 +68,7 @@ export const helmets = [
     rating: 4.4,
     sizes: ['S', 'M', 'L'],
     colors: ['Vintage Brown', 'Matte Black'],
-    image: '/images/open_face_retro_helmet_1786813090289.jpg',
+    image: `${import.meta.env.BASE_URL}images/open_face_retro_helmet_1786813090289.jpg`,
     description: 'Classic cafe-racer styling meets modern protection. The Nova Urban is lightweight and perfect for slow city rides and classic bike enthusiasts.',
     features: [
       'Classic Vintage Styling',
@@ -88,7 +88,7 @@ export const helmets = [
     rating: 4.9,
     sizes: ['S', 'M', 'L', 'XL'],
     colors: ['Hi-Vis Orange', 'Camo Green'],
-    image: '/images/off_road_helmet_1786813457533.jpg',
+    image: `${import.meta.env.BASE_URL}images/off_road_helmet_1786813457533.jpg`,
     description: 'Built for the dirt. The Apex Trail offers an extended peak and oversized ventilation ports to keep you cool on the toughest enduro trails.',
     features: [
       'Aggressive Off-Road Profile',
@@ -108,7 +108,7 @@ export const helmets = [
     rating: 4.9,
     sizes: ['M', 'L', 'XL'],
     colors: ['Gloss Red/White', 'Matte Carbon'],
-    image: '/images/full_face_carbon_helmet_1786813061790.jpg',
+    image: `${import.meta.env.BASE_URL}images/full_face_carbon_helmet_1786813061790.jpg`,
     description: 'Designed in the wind tunnel, the Speedmaster is Axon’s flagship racing helmet offering zero lift at high speeds.',
     features: [
       'FIM Racing Homologated',
@@ -128,7 +128,7 @@ export const helmets = [
     rating: 4.5,
     sizes: ['L', 'XL', 'XXL'],
     colors: ['Metallic Silver', 'Matte Black'],
-    image: '/images/modular_touring_helmet_1786813075868.jpg',
+    image: `${import.meta.env.BASE_URL}images/modular_touring_helmet_1786813075868.jpg`,
     description: 'Long-distance touring helmet with an advanced noise-reduction neck roll and ultra-wide field of view.',
     features: [
       'Acoustic Collar',
@@ -148,7 +148,7 @@ export const helmets = [
     rating: 4.2,
     sizes: ['M', 'L'],
     colors: ['Gloss Black', 'Matte Grey'],
-    image: '/images/open_face_retro_helmet_1786813090289.jpg',
+    image: `${import.meta.env.BASE_URL}images/open_face_retro_helmet_1786813090289.jpg`,
     description: 'A minimalist open-face helmet designed for freedom and simple cruising.',
     features: [
       'Low Profile Fit',
@@ -168,7 +168,7 @@ export const helmets = [
     rating: 4.6,
     sizes: ['M', 'L', 'XL'],
     colors: ['Desert Sand', 'Matte Black'],
-    image: '/images/off_road_helmet_1786813457533.jpg',
+    image: `${import.meta.env.BASE_URL}images/off_road_helmet_1786813457533.jpg`,
     description: 'Adventure-touring helmet with a dual-sport design, allowing you to use it with a visor or goggles.',
     features: [
       'Removable Peak',
@@ -188,7 +188,7 @@ export const helmets = [
     rating: 4.3,
     sizes: ['S', 'M', 'L'],
     colors: ['Gloss White', 'Matte Blue'],
-    image: '/images/full_face_carbon_helmet_1786813061790.jpg',
+    image: `${import.meta.env.BASE_URL}images/full_face_carbon_helmet_1786813061790.jpg`,
     description: 'Entry-level full-face protection with uncompromising safety standards and a sleek profile.',
     features: [
       'Polycarbonate Shell',
@@ -207,7 +207,7 @@ export const accessories = [
     name: 'Apex Track Gloves',
     category: 'Gloves',
     price: 4499,
-    image: '/images/premium_riding_gloves_1786813710964.jpg',
+    image: `${import.meta.env.BASE_URL}images/premium_riding_gloves_1786813710964.jpg`,
     description: 'Premium kangaroo leather racing gloves with carbon knuckle sliders.'
   },
   {
@@ -215,7 +215,7 @@ export const accessories = [
     name: 'Volt Urban Mesh Jacket',
     category: 'Jackets',
     price: 7999,
-    image: '/images/premium_riding_jacket_1786813737662.jpg',
+    image: `${import.meta.env.BASE_URL}images/premium_riding_jacket_1786813737662.jpg`,
     description: 'Highly breathable mesh jacket with CE Level 2 armor for city commuting.'
   },
   {
@@ -223,7 +223,7 @@ export const accessories = [
     name: 'Raven Winter Balaclava',
     category: 'Balaclavas',
     price: 999,
-    image: '/images/premium_riding_jacket_1786813737662.jpg',
+    image: `${import.meta.env.BASE_URL}images/premium_riding_jacket_1786813737662.jpg`,
     description: 'Thermal, windproof balaclava to keep you warm on chilly morning rides.'
   },
   {
@@ -231,7 +231,7 @@ export const accessories = [
     name: 'Axon Tinted Visor',
     category: 'Visors',
     price: 1499,
-    image: '/images/full_face_carbon_helmet_1786813061790.jpg',
+    image: `${import.meta.env.BASE_URL}images/full_face_carbon_helmet_1786813061790.jpg`,
     description: 'Dark smoke replacement visor with anti-scratch coating.'
   },
   {
@@ -239,7 +239,7 @@ export const accessories = [
     name: 'Nova Leather Riding Boots',
     category: 'Riding Gear',
     price: 8499,
-    image: '/images/premium_riding_gloves_1786813710964.jpg',
+    image: `${import.meta.env.BASE_URL}images/premium_riding_gloves_1786813710964.jpg`,
     description: 'Classic styling with modern ankle protection and reinforced shifting pads.'
   },
   {
@@ -247,7 +247,7 @@ export const accessories = [
     name: 'Apex Knee Guards',
     category: 'Riding Gear',
     price: 2999,
-    image: '/images/premium_riding_gloves_1786813710964.jpg',
+    image: `${import.meta.env.BASE_URL}images/premium_riding_gloves_1786813710964.jpg`,
     description: 'Articulating dual-pivot knee guards for extreme off-road protection.'
   },
   {
@@ -255,7 +255,7 @@ export const accessories = [
     name: 'Volt All-Weather Bike Cover',
     category: 'Bike Covers',
     price: 1999,
-    image: '/images/premium_riding_jacket_1786813737662.jpg',
+    image: `${import.meta.env.BASE_URL}images/premium_riding_jacket_1786813737662.jpg`,
     description: 'Heavy-duty waterproof and UV-resistant motorcycle cover with lock holes.'
   },
   {
@@ -263,7 +263,7 @@ export const accessories = [
     name: 'Raven Summer Gloves',
     category: 'Gloves',
     price: 2499,
-    image: '/images/premium_riding_gloves_1786813710964.jpg',
+    image: `${import.meta.env.BASE_URL}images/premium_riding_gloves_1786813710964.jpg`,
     description: 'Lightweight textile gloves with TPR knuckle protection and touch-screen fingers.'
   },
   {
@@ -271,7 +271,7 @@ export const accessories = [
     name: 'Axon Touring Jacket',
     category: 'Jackets',
     price: 12999,
-    image: '/images/premium_riding_jacket_1786813737662.jpg',
+    image: `${import.meta.env.BASE_URL}images/premium_riding_jacket_1786813737662.jpg`,
     description: 'Four-season touring jacket with removable waterproof and thermal liners.'
   },
   {
@@ -279,7 +279,7 @@ export const accessories = [
     name: 'Nova Coolmax Balaclava',
     category: 'Balaclavas',
     price: 799,
-    image: '/images/premium_riding_jacket_1786813737662.jpg',
+    image: `${import.meta.env.BASE_URL}images/premium_riding_jacket_1786813737662.jpg`,
     description: 'Moisture-wicking balaclava for summer rides, keeping helmet liner fresh.'
   }
 ];

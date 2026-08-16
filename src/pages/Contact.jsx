@@ -18,21 +18,21 @@ export const Contact = () => {
   return (
     <div className="pt-32 pb-24 min-h-screen bg-dark">
       <div className="container mx-auto px-6 max-w-7xl">
-        
-        <SectionHeading 
+
+        <SectionHeading
           label="GET IN TOUCH"
           title="LET'S TALK."
           description="Need help choosing the right helmet or riding gear? Our team is ready to help."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-16">
-          
+
           {/* Left: Contact Info & Form */}
           <div className="flex flex-col gap-16">
-            
+
             <ScrollReveal delay={0.1}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                
+
                 <div>
                   <h3 className="font-display font-bold uppercase tracking-wider mb-4 flex items-center gap-2">
                     <Phone className="w-5 h-5 text-primary" />
@@ -61,7 +61,7 @@ export const Contact = () => {
             {/* Contact Form */}
             <ScrollReveal delay={0.2} className="bg-dark-surface p-8 border border-white/5">
               <h3 className="font-display font-bold text-2xl uppercase tracking-wider mb-6">Send an Enquiry</h3>
-              
+
               {isSubmitted ? (
                 <div className="flex flex-col items-center justify-center py-12 text-center">
                   <CheckCircle2 className="w-16 h-16 text-primary mb-4" />
@@ -72,9 +72,9 @@ export const Contact = () => {
                 <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-bold tracking-wider text-gray-400 uppercase mb-2">Full Name</label>
-                    <input 
-                      type="text" 
-                      id="name" 
+                    <input
+                      type="text"
+                      id="name"
                       required
                       className="w-full bg-[#111] border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
                       placeholder="John Doe"
@@ -82,9 +82,9 @@ export const Contact = () => {
                   </div>
                   <div>
                     <label htmlFor="phone" className="block text-sm font-bold tracking-wider text-gray-400 uppercase mb-2">Phone Number</label>
-                    <input 
-                      type="tel" 
-                      id="phone" 
+                    <input
+                      type="tel"
+                      id="phone"
                       required
                       className="w-full bg-[#111] border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
                       placeholder="+91 XXXXX XXXXX"
@@ -92,8 +92,8 @@ export const Contact = () => {
                   </div>
                   <div>
                     <label htmlFor="message" className="block text-sm font-bold tracking-wider text-gray-400 uppercase mb-2">Message</label>
-                    <textarea 
-                      id="message" 
+                    <textarea
+                      id="message"
                       rows="4"
                       required
                       className="w-full bg-[#111] border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors resize-none"
@@ -111,20 +111,20 @@ export const Contact = () => {
 
           {/* Right: Store Info & Map */}
           <ScrollReveal direction="left" delay={0.3} className="flex flex-col">
-            
+
             <div className="bg-dark-surface border border-white/5 p-8 mb-8 relative overflow-hidden group">
               <div className="absolute inset-0 z-0">
-                <img 
-                  src="/images/store_interior_1786815769949.jpg" 
+                <img
+                  src={`${import.meta.env.BASE_URL}images/store_interior_1786815769949.jpg`}
                   alt="Store"
                   className="w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-surface to-transparent" />
               </div>
-              
+
               <div className="relative z-10 flex flex-col h-full justify-end">
                 <h2 className="font-display font-black text-4xl mb-6">VISIT OUR STORE</h2>
-                
+
                 <div className="flex items-start gap-4 mb-6">
                   <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
@@ -139,7 +139,7 @@ export const Contact = () => {
                     <h4 className="font-bold text-white mb-1">Opening Hours</h4>
                     <p className="text-gray-400">
                       Monday - Saturday: {siteConfig.openingHours.weekdays}
-                      <br/>
+                      <br />
                       Sunday: {siteConfig.openingHours.sunday}
                     </p>
                   </div>
@@ -164,11 +164,11 @@ export const Contact = () => {
 
             {/* Map Placeholder */}
             <div className="h-64 bg-[#111] border border-white/5 relative flex items-center justify-center group overflow-hidden">
-               <div className="absolute inset-0 bg-[url('/images/rider_action_1786815787314.jpg')] bg-cover bg-center opacity-30 grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:opacity-50"></div>
-               <div className="relative z-10 text-center">
-                 <MapPin className="w-8 h-8 text-primary mx-auto mb-3 animate-bounce" />
-                 <h4 className="font-display font-bold tracking-widest uppercase">Tiruppur, Tamil Nadu</h4>
-               </div>
+              <div className="absolute inset-0 bg-cover bg-center opacity-30 grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:opacity-50" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}images/rider_action_1786815787314.jpg')` }}></div>
+              <div className="relative z-10 text-center">
+                <MapPin className="w-8 h-8 text-primary mx-auto mb-3 animate-bounce" />
+                <h4 className="font-display font-bold tracking-widest uppercase">Tiruppur, Tamil Nadu</h4>
+              </div>
             </div>
 
           </ScrollReveal>
