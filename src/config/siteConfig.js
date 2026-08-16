@@ -1,8 +1,8 @@
 export const siteConfig = {
   shopName: 'RIDEFORGE',
   tagline: 'GEAR UP. RIDE HARD.',
-  whatsappNumber: '919876543210',
-  phone: '+91 98765 43210',
+  whatsappNumber: '919786149477',
+  phone: '+91 97861 49477',
   email: 'hello@rideforge.in',
   address: '123 Avinashi Road,\nTiruppur, Tamil Nadu',
   openingHours: {

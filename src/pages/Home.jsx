@@ -85,6 +85,9 @@ export const Home = () => {
                 <img
                   src={`${import.meta.env.BASE_URL}images/full_face_carbon_helmet_1786813061790.jpg`}
                   alt="Premium Carbon Helmet"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
                   className="w-full max-w-[500px] object-contain drop-shadow-2xl"
                 />
               </motion.div>
@@ -134,6 +137,8 @@ export const Home = () => {
                   <img
                     src={cat.img}
                     alt={cat.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 z-20 flex flex-col justify-end p-8">
@@ -217,6 +222,8 @@ export const Home = () => {
           <img
             src={`${import.meta.env.BASE_URL}images/rider_action_1786815787314.jpg`}
             alt="Riding"
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover"
           />
         </div>

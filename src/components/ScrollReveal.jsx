@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 
-export const ScrollReveal = ({ 
-  children, 
-  delay = 0, 
+export const ScrollReveal = ({
+  children,
+  delay = 0,
   direction = 'up',
   className = ''
 }) => {
@@ -16,17 +16,17 @@ export const ScrollReveal = ({
 
   return (
     <motion.div
-      initial={{ 
-        opacity: 0, 
+      initial={{
+        opacity: 0,
         ...directions[direction]
       }}
-      whileInView={{ 
-        opacity: 1, 
-        x: 0, 
-        y: 0 
+      whileInView={{
+        opacity: 1,
+        x: 0,
+        y: 0
       }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ 
+      viewport={{ once: true, amount: 0.05 }}
+      transition={{
         duration: 0.6,
         delay,
         ease: [0.21, 0.47, 0.32, 0.98]

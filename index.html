@@ -2,19 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;900&family=Syncopate:wght@400;700;900&display=swap" rel="stylesheet">
     
     <title>RIDEFORGE | Premium Helmets & Riding Gear</title>
     <meta name="description" content="Premium helmets and riding gear built for riders who refuse to compromise." />
   </head>
-  <body>
-    <div id="root"></div>
+  <body style="margin: 0; background-color: #0A0A0A; color: #ffffff;">
+    <div id="root">
+      <!-- Instant Preloader for Mobile & Slow Networks -->
+      <div id="app-preloader" style="position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #0A0A0A; font-family: 'Outfit', system-ui, sans-serif; z-index: 9999;">
+        <div style="position: relative; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+          <div style="width: 56px; height: 56px; border: 3px solid rgba(249, 115, 22, 0.2); border-top-color: #F97316; border-radius: 50%; animation: rf-spin 0.8s linear infinite;"></div>
+        </div>
+        <div style="font-size: 22px; font-weight: 900; letter-spacing: 0.15em; text-transform: uppercase; color: #ffffff; margin-bottom: 6px;">
+          RIDEFORGE<span style="color: #F97316;">.</span>
+        </div>
+        <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; color: #737373;">
+          Loading Gear...
+        </div>
+      </div>
+      <style>
+        @keyframes rf-spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      </style>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

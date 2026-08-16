@@ -14,16 +14,18 @@ export const ProductCard = ({ product, className }) => {
     >
       <Link to={`/helmets/${id}`} className="relative aspect-square overflow-hidden bg-[#111] p-6 flex items-center justify-center block">
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
-        <motion.img 
-          src={image} 
+        <motion.img
+          src={image}
           alt={name}
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-contain filter drop-shadow-2xl transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute top-4 left-4 z-20">
           <span className="text-xs font-bold tracking-wider text-gray-400 uppercase">{brand}</span>
         </div>
       </Link>
-      
+
       <div className="p-6 flex flex-col flex-grow">
         <div className="flex justify-between items-start mb-2 gap-4">
           <div className="min-w-0 flex-1">
@@ -32,9 +34,9 @@ export const ProductCard = ({ product, className }) => {
           </div>
           <span className="text-primary font-bold flex-shrink-0">₹{price.toLocaleString('en-IN')}</span>
         </div>
-        
+
         <div className="mt-auto pt-4 flex items-center justify-between border-t border-white/5">
-          <Link 
+          <Link
             to={`/helmets/${id}`}
             className="text-sm font-medium text-white flex items-center gap-1 group-hover:text-primary transition-colors"
           >
